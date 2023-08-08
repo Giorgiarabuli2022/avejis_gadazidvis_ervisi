@@ -1,0 +1,653 @@
+/* many elements / groups */
+
+/* 1536 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.dropdown a {
+    color: #000;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    color: #fff;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header:hover {
+    background: #000;
+    transition: 0.5s;
+    color: #fff;
+
+}
+
+header:hover button {
+    color: #fff;
+}
+
+/* header:hover */
+
+header .container {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+
+}
+
+
+/* ul / li */
+
+header .container .box .content {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+header .container .box .content button {
+    background: none;
+    border: none;
+    transition: 0.5s;
+    font-weight: 200;
+    display: inline-block;
+    position: relative;
+    /* font-family; */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header .container .box .content a button {
+    background: none;
+    border: none;
+    transition: 0.5s;
+    font-weight: 200;
+    display: inline-block;
+    position: relative;
+    /* font-family; */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header .container .box .content button:nth-child(2):hover {
+    color: rgb(186, 0, 233);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(186, 2, 232);
+}
+
+header .container .box .content button:nth-child(1):hover {
+    color: rgb(255, 0, 136);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(255, 0, 136);
+}
+
+header .container .box .content .dropdown a button:hover {
+    color: rgb(19, 233, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(20, 241, 0);
+}
+
+header .container .box .content button:nth-child(4):hover {
+    color: rgb(230, 23, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(230, 23, 0);
+}
+
+header .container .box .content button:nth-child(5):hover {
+    color: rgb(0, 255, 162);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 255, 162);
+    ;
+}
+
+
+
+/* title */
+header .container .box h1 {
+    font-weight: 550;
+    transition: 0.5s;
+    border: none;
+    font-size: 30px;
+    transition: border 0;
+    padding: 10px 20px;
+}
+
+header .container .box h1:hover {
+    border: none;
+
+    /* border-radius: 10px;
+    box-shadow: 0 0 10px red,
+        0 0 20px red,
+        0 0 25px red; */
+    /* 0 0 35px red; */
+}
+
+/* img */
+
+.background img {
+    width: 100%;
+}
+
+
+
+.dropdown-content {
+    display: none;
+
+    /* opacity: 0; */
+    position: absolute;
+    /* min-width: 160px; */
+    margin-top: 75px;
+    margin-left: -5%;
+    /* width: 300px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* display: flex; */
+    /* height: 100px; */
+    gap: 5px;
+
+}
+
+.dropdown-content h2 {
+    color: #fff;
+    font-size: 15px;
+    font-family: sans-serif;
+    background: rgb(0, 0, 0);
+    /* padding: 10px 20px;     */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    /* border: 2px solid #000; */
+    /* border-radius: 10px; */
+}
+
+.dropdown:nth-child(2) .dropdown-content {
+    margin-top: 200px;
+}
+
+.dropdown:hover .dropdown-content {
+    transition: 0.5s;
+    display: flex;
+    opacity: 1;
+    /* transform: translateX(0); */
+    /* margin-left: -75%; */
+}
+
+
+
+
+
+
+
+
+
+
+/* 2 */
+
+.dropdown-content_2 {
+    display: none;
+
+    /* opacity: 0; */
+    position: absolute;
+    /* min-width: 160px; */
+    margin-top: 100px;
+    margin-left: -5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* display: flex; */
+    gap: 5px;
+
+}
+
+.dropdown-content_2 h2 {
+    color: #fff;
+    line-height: 23px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background: rgb(0, 0, 0);
+    /* padding: 10px 20px;     */
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    /* border: 2px solid #000; */
+    /* border-radius: 10px; */
+}
+
+.dropdown_2:nth-child(2) .dropdown-content_2 {
+    margin-top: 200px;
+}
+
+.dropdown_2:hover .dropdown-content_2 {
+    transition: 0.5s;
+    display: flex;
+    opacity: 1;
+    /* transform: translateX(0); */
+    /* margin-left: -75%; */
+}
+
+
+
+
+
+
+
+
+/* 3 */
+main {
+    background: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+main div {
+    display: flex;
+
+    /* flex-direction: column; */
+}
+
+article {
+    width: 45%;
+    transition: 0.5s;
+    display: flex;
+    margin: 50px;
+    background: #eeeeee;
+    padding: 20px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+article img {
+    width: 100px;
+}
+
+article div {
+    /* padding: 10px; */
+    margin-left: 30px;
+    flex-direction: column;
+}
+
+article div p {
+    margin: 2px;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+article div h3 {
+    margin: 2px;
+    letter-spacing: 2px;
+    padding: 2px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+article div a {
+    margin: 10px 2px;
+    font-size: 20px;
+    font-weight: 500;
+    color: red;
+    text-decoration: none;
+    border: 2px solid red;
+    text-align: center;
+    border-radius: 5px;
+    width: 40%;
+    padding: 5px 5px;
+    width: 80%;
+}
+
+article:hover {
+    border: 2px solid red;
+}
+
+
+
+#main_services {
+    /* margin-left: 10%; */
+    width: 100%;
+    background: none;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10%;
+}
+
+#main_services div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+#main_services div h1 {
+    font-size: 50px;
+}
+
+#main_services div p {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    line-height: 25px;
+    /* width: 50%; */
+}
+
+#main_services div img {
+    width: 100%;
+    margin-left: 10%;
+}
+
+
+
+#main_services div:nth-child(2) {
+    width: 20%;
+}
+
+
+#main_services_2 {
+    /* margin-left: 10%; */
+    width: 100%;
+    background: none;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10%;
+}
+
+#main_services_2 div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+#main_services_2 div h1 {
+    font-size: 50px;
+}
+
+#main_services_2 div p {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    line-height: 25px;
+    /* width: 50%; */
+}
+
+#main_services_2 div img {
+    width: 90%;
+    margin-left: 10%;
+}
+
+#main_services_2 div:nth-child(2) {
+    width: 20%;
+}
+
+footer {
+    padding-top: 5%;
+    width: 100%;
+    background: #121212;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    color: #fff;
+    /* gap: 10px; */
+    padding-bottom: 5%;
+}
+
+footer div {
+    margin: 5px;
+}
+
+footer div h3 {
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+footer div h3:hover {
+    text-decoration: underline;
+}
+
+footer div p:hover {
+    text-decoration: underline;
+}
+
+footer div p {
+    margin: 5px 0px;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+footer div a {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:1176px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .dropdown-content_2 {
+        margin-top: 40px;
+        margin-left: -80px;
+    }
+
+    .dropdown .dropdown-content {
+        margin-top: 50px;
+        /* margin-right: 50px; */
+    }
+}
+
+@media (max-width:1276px) {
+    article div h3 {
+        font-size: 23px;
+    }
+
+    /* .dropdown-content {
+            margin-top: 20px;
+        } */
+}
+
+@media (max-width:1376px) {
+    #main_services_2 div h1 {
+        font-size: 33px;
+    }
+
+    #main_services_2 div p {
+        font-size: 18px;
+    }
+
+    .dropdown-content {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:1076px) {
+    article div h3 {
+        font-size: 20px;
+    }
+
+    article div p {
+        font-size: 15px;
+    }
+
+
+
+
+}
+
+
+@media (max-width: 876px) {
+    main div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div article {
+        width: 70%;
+
+    }
+
+    footer div p {
+        font-size: 15px;
+    }
+
+    .container nav {
+        flex-direction: column;
+    }
+
+    header .container .box .content {
+        gap: 10;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container .box .content {
+        gap: 25px;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        margin-left: -50px;
+        z-index: 100;
+    }
+
+    .dropdown-content_2 {
+        z-index: 100;
+    }
+
+    .container nav {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    header .container .box .content {
+        gap: 10;
+    }
+
+    .container nav .content button {
+
+        margin: 0;
+    }
+
+    .container .box .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container .box .content button,
+    .container .box h1 {
+        font-size: 18px;
+    }
+
+    footer div h3 {
+        font-size: 14px;
+    }
+
+    footer div p {
+        font-size: 12px;
+    }
+
+    #main_services_2 div h1 {
+        font-size: 30px;
+        /* color: #e30000; */
+    }
+
+    #main_services div h1 {
+        font-size: 30px;
+        /* color: #e30000; */
+    }
+
+    #main_services_2 div p {
+        font-size: 17px;
+        /* color: #e30000; */
+        font-weight: 400;
+    }
+
+    #main_services div p {
+        font-size: 17px;
+        /* color: #e30000; */
+        font-weight: 400;
+    }
+}
+
+/* Example: Adjusting the main section for small devices */
+@media (max-width: 480px) {
+    main {
+        padding-top: 50px;
+    }
+
+    footer div h3 {
+        color: #900;
+    }
+
+    article {
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    article img {
+        width: 80px;
+    }
+
+    article div {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    article div h3 {
+        font-size: 18px;
+    }
+
+    article div p {
+        font-size: 14px;
+    }
+
+    article div a {
+        width: 100%;
+    }
+}
